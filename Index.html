@@ -11,20 +11,9 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Garantindo que o conteúdo abaixo do navbar fique centralizado */
-      .centralizar-conteudo {
-        min-height: calc(
-          100vh - 56px
-        ); /* Ajuste considerando altura da navbar */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
   </head>
   <body>
-    <header class="vh-100 d-flex flex-column">
+    <header class="header vh-100 d-flex flex-column">
       <nav class="navbar navbar-expand-lg">
         <div class="container d-flex flex-column align-items-center">
           <!-- Botão de navegação alinhado à direita no mobile -->
@@ -70,18 +59,30 @@
           <div class="col">
             <h1 class="title">Leandro Rodrigues</h1>
             <h2 class="subtitle">Desenvolvedor Fullstack</h2>
-            <div class="mt-3 btn-home">
-              <button type="button" class="btn me-4">Projetos</button>
-              <button type="button" class="btn">
-                Currículo<i class="bx bx-download"></i>
+            <div class="mt-5 btn-home">
+              <button type="button" class="btn me-4">
+                <a href="projetos.html">Projetos</a>
               </button>
+              <a
+                href="/assets/Curriculo_LeandroRodrigues.docx"
+                download="Curriculo-Leandro-Rodrigues.pdf"
+              >
+                <button type="download" class="btn">
+                  Currículo <i class="bx bx-download"></i>
+                </button>
+              </a>
             </div>
-            <a href="https://github.com/lefrodrigues">
+            <a href="https://github.com/lefrodrigues" class="me-2">
               <i class="bx bxl-github social-icon"></i>
             </a>
-            <a href="https://www.linkedin.com/in/leandro-f-rodrigues/">
+
+            <a
+              href="https://www.linkedin.com/in/leandro-f-rodrigues/"
+              class="me-2"
+            >
               <i class="bx bxl-linkedin social-icon"></i>
             </a>
+
             <a href="https://wa.me/5513992074483">
               <i class="bx bxl-whatsapp social-icon"></i>
             </a>

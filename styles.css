@@ -7,13 +7,21 @@
 
 }
 
-body {
+.header {
     background-color: #121212;
 }
 
 .btn {
-    background-color: #3890f9;
-    color: #ffffff;
+    background-color: #5bee02;
+    color: #121212;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #98fea0;
+    color: #121212;
+    transition: 0.5s;
+    transform: scale(1.15);
 }
 
 .nav-link {
@@ -22,7 +30,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #bb86fc;
+    color: #5bee02;
 }
 
 .nav-link active {
@@ -40,18 +48,24 @@ body {
 }
 
 .navbar .nav-link.active {
-    color: #bb86fc !important;
+    color: #5bee02 !important;
 }
 
 a {
     text-decoration: none;
+    color: #121212;
 }
 
 .social-icon {
-    color: #bb86fc;
-    font-size: 2rem !important;
+    color: #5bee02;
+    font-size: 2rem;
     margin-top: 3rem;
+}
 
+.social-icon:hover {
+    color: #98fea0;
+    transition: 0.5s;
+    transform: scale(1.25);
 }
 
 .title {
@@ -61,4 +75,12 @@ a {
 .subtitle {
     color: #ffffff;
     font-size: 1.5rem !important;
+}
+
+.centralizar-conteudo {
+    height: 100vh;
+    /* Ajuste considerando altura da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
